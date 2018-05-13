@@ -1,18 +1,18 @@
 /*25499f*/
 
-a
+.landing-page a
 {
   color: white;
 }
 
-body
+.landing-page
 {
   margin-top: 150px;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-body > p
+.landing-page > p
 {
   font-family: 'Source Serif Pro', serif;
   font-size: 80px;
@@ -23,7 +23,7 @@ body > p
   margin-bottom: 100px;
 }
 
-img
+.landing-page img
 {
   max-width: auto;
   max-height: 100%;
@@ -31,7 +31,7 @@ img
 
 
 
-.grid-container /*grid container*/
+.landing-page .grid-container /*grid container*/
 {
   margin: auto;
   margin-top: 60px;
@@ -43,7 +43,7 @@ img
   justify-content: center;
 }
 
-.grid-container > div /*story boxes*/ {
+.landing-page .grid-container > div /*story boxes*/ {
   font-size: 30px;
   text-align: center;
   width: 20vw;
@@ -55,7 +55,7 @@ img
   overflow: hidden;
 }
 
-.headline /*headline*/ {
+.landing-page .headline /*headline*/ {
   position: absolute;
   font-size: 18px;
   bottom: 8px;
@@ -67,7 +67,7 @@ img
   background-color: #25499f;
 }
 
-.overlay
+.landing-page .overlay
 {
   position: absolute;
   top: 0;
@@ -82,7 +82,7 @@ img
   text-align: left;
 }
 
-.overlay-text /*excerpts*/
+.landing-page .overlay-text /*excerpts*/
 {
   font-family: 'Source Serif Pro', serif;
   color: white;
@@ -97,17 +97,17 @@ img
   opacity: 0;
 }
 
-.grid-container > div:hover .overlay
+.landing-page .grid-container > div:hover .overlay
 {
   opacity: .85;
 }
 
-.grid-container > div:hover .overlay-text
+.landing-page .grid-container > div:hover .overlay-text
 {
   opacity: 1;
 }
 
-.grid-container > div:hover .headline
+.landing-page .grid-container > div:hover .headline
 {
   opacity: 0;
 }
