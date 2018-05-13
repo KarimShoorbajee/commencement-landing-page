@@ -15,7 +15,7 @@
 .landing-page > p
 {
   font-family: 'Source Serif Pro', serif;
-  font-size: 80px;
+  font-size: 5vw;
   text-align: center;
   color: white;
   padding: 0;
@@ -30,19 +30,66 @@
 }
 
 
-
 .landing-page .grid-container /*grid container*/
 {
   margin: auto;
   margin-top: 60px;
-  width: 75%;
+  width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   justify-content: center;
+  grid-template-areas:
+  "story1"
+  "story2"
+  "story3"
+  "story4"
+  "story5"
+  "story6"
+  "story7"
+  "story8"
+  "story9";
+
 }
 
+
+
+@media screen and (min-width: 900px)
+{
+  .landing-page .grid-container /*grid container*/
+  {
+    margin: auto;
+    margin-top: 60px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    grid-template-areas:
+    "story1 story2 story3"
+    "story4 story5 story6"
+    "story7 story8 story9";
+  }
+}
+
+
+
+.landing-page .grid-container > div /*story boxes*/ {
+  font-size: 30px;
+  text-align: center;
+  width: 35vw;
+  height: 35vw;
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 5px inset #25499f;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 900px)
+{
 .landing-page .grid-container > div /*story boxes*/ {
   font-size: 30px;
   text-align: center;
@@ -54,10 +101,11 @@
   border: 5px inset #25499f;
   overflow: hidden;
 }
+}
 
 .landing-page .headline /*headline*/ {
   position: absolute;
-  font-size: 18px;
+  font-size: 2vw;
   bottom: 8px;
   left: 16px;
   font-family: 'Source Serif Pro', serif;
@@ -65,6 +113,21 @@
   opacity: 1;
   text-align: left;
   background-color: #25499f;
+}
+
+@media screen and (min-width: 900px)
+{
+.landing-page .headline /*headline*/ {
+  position: absolute;
+  font-size: 1.3vw;
+  bottom: 8px;
+  left: 16px;
+  font-family: 'Source Serif Pro', serif;
+  transition: .5s ease;
+  opacity: 1;
+  text-align: left;
+  background-color: #25499f;
+}
 }
 
 .landing-page .overlay
@@ -86,7 +149,7 @@
 {
   font-family: 'Source Serif Pro', serif;
   color: white;
-  font-size: 14px;
+  font-size: 1.8vw;
   position: absolute;
   top: 50%;
   left: 35%;
@@ -96,6 +159,35 @@
   transition: .5s ease;
   opacity: 0;
 }
+
+
+@media screen and (min-width: 900px)
+{
+.landing-page .overlay-text /*excerpts*/
+{
+  font-family: 'Source Serif Pro', serif;
+  color: white;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  margin:0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: .5s ease;
+  opacity: 0;
+}
+}
+
+.landing-page .grid-item1{grid-area: story1}
+.landing-page .grid-item2{grid-area: story2}
+.landing-page .grid-item3{grid-area: story3}
+.landing-page .grid-item4{grid-area: story4}
+.landing-page .grid-item5{grid-area: story5}
+.landing-page .grid-item6{grid-area: story6}
+.landing-page .grid-item7{grid-area: story7}
+.landing-page .grid-item8{grid-area: story8}
+.landing-page .grid-item9{grid-area: story9}
 
 .landing-page .grid-container > div:hover .overlay
 {
