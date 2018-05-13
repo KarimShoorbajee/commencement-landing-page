@@ -1,0 +1,11 @@
+body
+{
+  margin-top: 50px;
+}
+
+body > p
+{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 60px;
+  text-align: center;
+}
