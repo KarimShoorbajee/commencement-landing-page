@@ -79,8 +79,8 @@
 .landing-page .grid-container > div /*story boxes*/ {
   font-size: 30px;
   text-align: center;
-  width: 35vw;
-  height: 35vw;
+  width: 80vw;
+  height: 80vw;
   position: relative;
   text-align: center;
   color: white;
@@ -105,7 +105,7 @@
 
 .landing-page .headline /*headline*/ {
   position: absolute;
-  font-size: 2vw;
+  font-size: 24px;
   bottom: 8px;
   left: 16px;
   font-family: 'Source Serif Pro', serif;
@@ -113,13 +113,14 @@
   opacity: 1;
   text-align: left;
   background-color: #25499f;
+  padding: 5px;
 }
 
 @media screen and (min-width: 900px)
 {
 .landing-page .headline /*headline*/ {
   position: absolute;
-  font-size: 1.3vw;
+  font-size: 18px;
   bottom: 8px;
   left: 16px;
   font-family: 'Source Serif Pro', serif;
@@ -149,7 +150,7 @@
 {
   font-family: 'Source Serif Pro', serif;
   color: white;
-  font-size: 1.8vw;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 35%;
@@ -167,7 +168,7 @@
 {
   font-family: 'Source Serif Pro', serif;
   color: white;
-  font-size: 1.2vw;
+  font-size: 14px;
   position: absolute;
   top: 50%;
   left: 35%;
