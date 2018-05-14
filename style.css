@@ -1,5 +1,7 @@
 /*25499f*/
 
+@import url("https://fonts.googleapis.com/css?family=Oswald:600|Source+Serif+Pro");
+
 .landing-page a
 {
   color: white;
@@ -7,20 +9,22 @@
 
 .landing-page
 {
-  margin-top: 100px;
   margin-bottom: 50px;
   justify-content: center;
+  text-align: center;
 }
 
 .landing-page > p
 {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 5vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
   text-align: center;
   color: white;
-  padding: 0;
-  line-height: 5%;
-  margin-bottom: 100px;
+  padding: 10px;
+  background-color: #003b5c;
+  display: inline-block;
+  line-height: 60px;
 }
 
 .landing-page img
@@ -33,7 +37,7 @@
 .landing-page .grid-container /*grid container*/
 {
   margin: auto;
-  margin-top: 60px;
+  margin-top: 20px;
   width: 100%;
   display: grid;
   grid-template-columns: auto;
@@ -60,7 +64,7 @@
   .landing-page .grid-container /*grid container*/
   {
     margin: auto;
-    margin-top: 60px;
+    margin-top: 20px;
     width: 75%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -112,7 +116,7 @@
   transition: .5s ease;
   opacity: 1;
   text-align: left;
-  background-color: #25499f;
+  background-color: #003b5c;
   padding: 5px;
 }
 
@@ -127,7 +131,7 @@
   transition: .5s ease;
   opacity: 1;
   text-align: left;
-  background-color: #25499f;
+  background-color: #003b5c;
 }
 }
 
@@ -142,7 +146,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #25499f;
+  background-color: #003b5c;
   text-align: left;
 }
 
@@ -203,4 +207,16 @@
 .landing-page .grid-container > div:hover .headline
 {
   opacity: 0;
+}
+
+
+/* This helps the page look right in the app */
+
+body.ios header {
+  display: none;
+}
+
+body.ios article.post {
+  padding-left: 0;
+  padding-right: 0;
 }
